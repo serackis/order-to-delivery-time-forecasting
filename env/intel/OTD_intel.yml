@@ -1,0 +1,11 @@
+name: OTD_intel
+channels:
+  - intel
+dependencies:
+  - python=3.9
+  - pip
+  - conda-forge::modin-ray==0.16
+  - pandas
+  - conda-forge::scikit-learn-intelex
+  - pip:
+    - xgboost==1.6.0

@@ -1,0 +1,24 @@
+###Data dwonloading steps#####
+
+**DataSet**: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+The Credit Card Fraud dataset can be downloaded from kaggle and extracted in a folder. Please execute the following steps to download the dataset.
+
+1) In the parent directory navigate to the data folder: cd data <br>
+2) Install kaggle if not done using the below command: <br>
+pip install kaggle<br>
+3) Login to Kaggle account. Go to 'Account Tab' & select 'Create a new API token'. This will trigger the download of kaggle.json file.
+This file contains your API credentials.<br>
+4) Move the downloaded 'kaggle.json' file to the .kaggle folder in your home directory (~/.kaggle/) <br>
+If no directory exists by that name, please create one in your home direcotry using the command: mkdir .kaggle
+5) Execute the following command:<br>
+chmod 600 ~/.kaggle/kaggle.json<br> 
+6) Export the kaggle username & token to the enviroment, but you may not need this if the API token is placed in the right location<br>
+export KAGGLE_USERNAME=@@@@@@@@$#$#$<br>
+export KAGGLE_KEY=@#@#@#@#@#@#!!@@@@##########<br>
+7) Navigate back to the data folder in your parent directory
+8) Run the following command to download the dataset
+kaggle datasets download -d olistbr/brazilian-ecommerce<br>
+"brazilian-ecommerce.zip" will get downloaded in the current data folder folderd<br>
+9) In the data folder execute the following command to unzip (Note: You may need to install unzip using: sudo apt-get install unzip)
+unzip brazilian-ecommerce.zip
