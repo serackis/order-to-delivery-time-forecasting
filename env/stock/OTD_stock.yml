@@ -1,0 +1,10 @@
+name: OTD_stock
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pandas
+  - scikit-learn
+  - pip:
+    - xgboost==1.6.0
