@@ -1,3 +1,9 @@
+# DISCONTINUATION OF PROJECT #  
+This project will no longer be maintained by Intel.  
+Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.  
+Intel no longer accepts patches to this project.  
+ If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.  
+  
 # **Order to Delivery (OTD) Forecasting - Building an Ensemble Model using XGBoost, Random Forests and Support Vector Machines**
 
 Delivery time forecasting models can be built with individual Machine Learning (ML) packages such as XGBoost (XGB), Random Forests (RF) and Support Vector Machines (SVM). These can be fed to an ensembling technique such as Voting Regressor/Classifier to improve the accuracy of the model. The Intel® AI Analytics Toolkit (AI Kit) gives data scientists, AI developers, and researchers familiar Python tools and frameworks to accelerate end-to-end data science and analytics pipelines on Intel architectures. The components are built using oneAPI libraries for low-level compute optimizations. We will use the the Intel® Extension for Scikit-learn*, powered by the Intel® oneAPI Data Analytics Library (oneDAL), to accelerate the individual build components as well as the ensemble model build.
