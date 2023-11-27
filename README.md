@@ -1,9 +1,3 @@
-# DISCONTINUATION OF PROJECT #  
-This project will no longer be maintained by Intel.  
-Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.  
-Intel no longer accepts patches to this project.  
- If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.  
-  
 # **Order to Delivery (OTD) Forecasting - Building an Ensemble Model using XGBoost, Random Forests and Support Vector Machines**
 
 Delivery time forecasting models can be built with individual Machine Learning (ML) packages such as XGBoost (XGB), Random Forests (RF) and Support Vector Machines (SVM). These can be fed to an ensembling technique such as Voting Regressor/Classifier to improve the accuracy of the model. The Intel® AI Analytics Toolkit (AI Kit) gives data scientists, AI developers, and researchers familiar Python tools and frameworks to accelerate end-to-end data science and analytics pipelines on Intel architectures. The components are built using oneAPI libraries for low-level compute optimizations. We will use the the Intel® Extension for Scikit-learn*, powered by the Intel® oneAPI Data Analytics Library (oneDAL), to accelerate the individual build components as well as the ensemble model build.
@@ -343,3 +337,7 @@ Performance results are based on testing as of dates shown in configurations and
 Your costs and results may vary. 
 Intel technologies may require enabled hardware, software or service activation.
 © Intel Corporation.  Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries.  Other names and brands may be claimed as the property of others.  
+
+To the extent that any public or non-Intel datasets or models are referenced by or accessed using tools or code on this site those datasets or models are provided by the third party indicated as the content source. Intel does not create the content and does not warrant its accuracy or quality. By accessing the public content, or using materials trained on or with such content, you agree to the terms associated with that content and that your use complies with the applicable license.
+ 
+Intel expressly disclaims the accuracy, adequacy, or completeness of any such public content, and is not liable for any errors, omissions, or defects in the content, or for any reliance on the content. Intel is not liable for any liability or damages relating to your use of public content.
