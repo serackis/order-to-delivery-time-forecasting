@@ -10,7 +10,11 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 def read_data():
-    orders = pd.read_csv("./data/olist_orders_dataset.csv")
+    # Read CSV files with proper datetime parsing
+    orders = pd.read_csv("./data/olist_orders_dataset.csv", 
+                        parse_dates=['order_purchase_timestamp', 'order_approved_at', 
+                                   'order_delivered_carrier_date', 'order_delivered_customer_date', 
+                                   'order_estimated_delivery_date'])
     items = pd.read_csv("./data/olist_order_items_dataset.csv")
     customers = pd.read_csv("./data/olist_customers_dataset.csv")
     sellers = pd.read_csv("./data/olist_sellers_dataset.csv")

@@ -63,10 +63,8 @@ def main(FLAGS):
     orders_size_weight = get_package_size(items, products)
     filtered_orders = filtered_orders.merge(orders_size_weight, on='order_id', how='left')
 
-    # process time columns
-    time_columns = ['order_purchase_timestamp', 'order_delivered_customer_date', 'order_estimated_delivery_date']
-    for column in time_columns:
-        filtered_orders.loc[:, column] = pd.to_datetime(filtered_orders[column])
+    # Time columns are already parsed as datetime in read_data()
+    # No need to convert them again
 
     filtered_orders.loc[:, "wait_time"] = (filtered_orders['order_delivered_customer_date'] -
                                            filtered_orders['order_purchase_timestamp']).dt.days
